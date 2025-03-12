@@ -6,23 +6,23 @@ function HeaderNav()
 {
   return (
     <>
-     <nav className="navbar navbar-expand-sm bg-body-tertiary border border-dark">
+     <nav className="navbar navbar-expand bg-body-tertiary border border-dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
      <img src={fligthLogo} alt="site_logo" className="rounded-circle" width={60} height={60}/>
     </a>
     <div>
-      <ul className="navbar-nav me-auto mb-1">
-        <li className="nav-item me-4">
+      <ul className="navbar-nav mb-1">
+        <li className="nav-item me-2 me-sm-4">
           <button className="btn btn-primary">Sign in</button>
         </li>
-        <li className="nav-item me-4">
+        <li className="nav-item me-2 me-sm-4">
           <button className="btn btn-primary">Sign up</button>
         </li>
         <li className="nav-item">
           <button className="btn btn-primary d-flex h-28 p-1.5">
             <img src={flaglogo} className="rounded-circle" width={25} height={25}/>
-            <div className="col border border-left-1 mx-2 p-0"></div>
+            <div className="border border-left-1 mx-2 p-0"></div>
             <select className="bg-primary text-white" style={{border:"none",outline:"none"}}>
               <option>Eng</option>
               <option>Japnese</option>
