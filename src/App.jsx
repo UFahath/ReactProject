@@ -2,14 +2,15 @@
 // import './App.css'
 
 import HeaderNav from "./Components/HeaderNav"
-import  SignUp  from "./Components/SignUp"
+import { BrowserRouter as Router, Routes,Route,Link } from "react-router-dom"
+
+
 
 function App() {
 
   return (
     <>
       <HeaderNav/>
-      <SignUp/>
     </>
   )
 }

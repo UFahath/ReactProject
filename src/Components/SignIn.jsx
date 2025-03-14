@@ -1,32 +1,7 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
-
-// import {useEffect,useRef,useState} from "react"
 import { BrandInfo } from "./BrandInfo"
-import  BottomWiderButton,{ TopWiderButton}  from "./SignUiButton"
 import { ReusableInput } from "./ReusableInput"
-
- const SignUp = () => {
-
-// // ref object
-// let formRef=useRef(null);
-  
-
-// let register=()=>{
-//        //first index of ref object current
-//        let registerForm=formRef.current;
-//        console.log(registerForm)
-//        //form control email
-//        let name=registerForm.elements.email.value;
-
-//        //form control password
-//       //  let apassword=registerForm.elements.password.value;
-//        console.log(name);
-//       //  console.log(apassword)
-// }
-// useEffect(register,[])
-
-
+import BottomWiderButton,{TopWiderButton}from './SignUiButton'
+export const SignIn = () => {
   return (
     <>
     {/* overrall container */}
@@ -50,7 +25,7 @@ import { ReusableInput } from "./ReusableInput"
       <div className=" col col-sm-8">
         <div className="card w-100">
           <div className="card-header text-center fs-4 fw-bolder">
-            Sign Up
+            Sign In
           </div>
           <div className="card-body">
 
@@ -82,22 +57,19 @@ import { ReusableInput } from "./ReusableInput"
             
              <ReusableInput/>
 
-              <div className="form-group my-3">
-              <label  className="form-label"/> Retype Password
-              <input  className="form-control mt-3" placeholder="Password" type="password" required/>
-              </div>
+             
 
               <div className="form-check">
               <input type="checkbox" className="form-check-input"  required/>
-              <label  className="form-check-label"> By Proceeding ,you agree ourPrivacy Policy ,UserAgreement and T&C's</label>
+              <label  className="form-check-label"> Remember Me</label>
               </div>
 
                {/* bottomwiderbutton */}
                <BottomWiderButton/>
             
 
-            <div className="input-text mt-3 text-center">Already have An Account?
-              <a className="link-underline-light ms-2 fw-bolder" href="#">Sign In</a>
+            <div className="input-text mt-3 text-center">Don't have An Account?
+              <a className="link-underline-light ms-2 fw-bolder" href="#">Sign Up</a>
             </div>
            </form>
 
@@ -112,4 +84,3 @@ import { ReusableInput } from "./ReusableInput"
     </>
   )
 }
-export default SignUp;
